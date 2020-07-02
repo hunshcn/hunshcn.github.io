@@ -108,15 +108,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script>
+        function toSubmit(e) {
+            e.preventDefault()
+            window.open('/' + document.getElementsByName('q')[0].value);
+            return false
+        }
+    </script>
     <title>GitHub 文件加速</title>
 </head>
 <body class="flex">
 <a style="position: absolute;top: 0;right: 0;" href="https://github.com/hunshcn/gh-proxy"><img width="149" height="149"
-                                                                                               src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149"
+                                                                                               src="https://sc01.alicdn.com/kf/H32171f5d680e434f9e810183cb2fefe8X.jpg"
                                                                                                alt="Fork me on GitHub"
                                                                                                data-recalc-dims="1"></a>
 <h1 style="margin-bottom: 50px"><img src="https://ae01.alicdn.com/kf/H2fc84859291347418b11091fe0e508b8v.png" style="width: 1.5em;margin-right: .2em;vertical-align: bottom;">GitHub 文件加速</h1>
-<form action="./" method="get" style="padding-bottom: 40px" target="_blank" class="flex">
+<form action="./" method="get" style="padding-bottom: 40px" target="_blank" class="flex" onsubmit="toSubmit(event)">
     <label class="block" style="width: fit-content">
         <input class="block url" name="q" type="text" placeholder="键入Github文件链接"
                pattern="^(?:(?:https|http):\/\/)?github\.com\/.+?\/.+?\/(?:releases|archive|blob)\/.+$" required>
