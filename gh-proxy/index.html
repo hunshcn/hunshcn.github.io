@@ -126,7 +126,7 @@
 <form action="./" method="get" style="padding-bottom: 40px" target="_blank" class="flex" onsubmit="toSubmit(event)">
     <label class="block" style="width: fit-content">
         <input class="block url" name="q" type="text" placeholder="键入Github文件链接"
-               pattern="^((https|http):\/\/)?(github\.com\/.+?\/.+?\/(?:releases|archive|blob)|(raw\.githubusercontent\.com))\/.+$" required>
+               pattern="^((https|http):\/\/)?(github\.com\/.+?\/.+?\/(?:releases|archive|blob)|((?:raw|gist)\.githubusercontent\.com))\/.+$" required>
         <div class="bar"></div>
     </label>
     <input class="block btn" type="submit" value="下载">
